@@ -14,7 +14,7 @@ One folder contains the works this project was [forked](https://github.com/0xhck
 A unique collection curated by individuals with talent to show their stuff to the community. Nothing Ghostty ricing is off-limits. There will be more structure to follow along with as I develop this further, so there will be no confusion about what to do if you wish to make a contribution.
 >For the time being keep all *questions* or *contribution ideas* will be treated as *issues* untill the project matures.  
 
-Rules off the bat: 
+Rules: 
 No AI. 
 Contributions made with LLMs, or with LLMs listed as contributors, will be rejected.
 
@@ -24,7 +24,7 @@ For now, enjoy what's displayed here!!!
 And thank you for checking out the repo!
 While it's still a work in progress, I hope you enjoy and look forward to watching the project grow.
 
-Below are **Installation** instructions.(will always work on the main branch, even as the project gets more complex.)
+Below are **Installation** instructions.(any instructions in the README will always work on the main branch, even as the project gets more complex.)
 
 ---
 . Tree view
@@ -110,7 +110,7 @@ If you see `unknown field` errors in your logs, you likely pasted GLSL code dire
 ### Performance & Latency:
 To maintain a steady 60/120 FPS on high-refresh displays:
 * Use `custom-shader-animation = true` to pause rendering when the window is hidden.
-* Keep the math inside `mainImage` as lean as possible—avoid complex loops
+* Keep the math inside `mainImage` as lean as possible, and avoid complex loops.
 
 ## Progress 
 anything inside ghostty-shaders is not currently optimized, I will continue to pull new updates in from the maintainers but I will not make any direct progress with the project. 
