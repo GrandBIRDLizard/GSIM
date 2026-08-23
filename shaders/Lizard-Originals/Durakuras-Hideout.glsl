@@ -1,4 +1,4 @@
-// GSIM shader collection for use with ghostty 1.3.0+.
+// GSIM shader collection for use with ghostty 1.3.x
 // Durakuras-Hideout Written by GrandBIRDLizard.  
 
 float hash(vec2 p) {
