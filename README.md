@@ -6,25 +6,28 @@
 
 ---
 
-### A collection of GLSL fragment shaders optimized for [Ghostty](https://ghostty.org/) terminal v1.3.0+.
+### A collection of GLSL fragment shaders optimized for [Ghostty](https://ghostty.org/) terminal v1.3.x+.
 
 These shaders have been written to enforce GLSL type safety, resolve `iChannel0` initialization races, and play nicely with strict Mesa drivers and Ghostty engine changes without tanking your framerate.
-One folder contains the works this project was [forked](https://github.com/0xhckr/ghostty-shaders) from. I just want a place to curate shaders better, and a place for new and consistent contributors with well-performing shaders to have their own "collection," if you will, represented in the form of a directory in this repo. 
+One folder contains the works this project was originally forked from "ghosty-shaders" but due to licencing and the use of ai I won't be contributing upstream and the project is now spit. I just want a place to curate shaders better, and a place for new and consistent contributors with well-performing shaders to have their own "collection," if you will, represented in the form of a directory in this repo. Free to licence and maintain their own curation on the repo and elsewhere soon. 
 
-A unique collection curated by individuals with talent to show their stuff to the community. Nothing Ghostty ricing is off-limits. There will be more structure to follow along with as I develop this further, so there will be no confusion about what to do if you wish to make a contribution.
+A unique collection curated by individuals to show their unique style and shader efficiency to the community. 
+Nothing Ghostty ricing is off-limits. 
+There will be more structure to follow along with as I develop this further, 
+so there will be no confusion about what to do if you wish to make a contribution.
 >For the time being keep all *questions* or *contribution ideas* will be treated as *issues* untill the project matures.  
 
-Rules off the bat: 
+Rules: 
 No AI. 
-Contributions made with LLMs, or with LLMs listed as contributors, will be rejected.
+Contributions obviously made with LLMs, or with LLMs listed as contributors(If you used it for any reason, let it be known, and it will be put up for review) other wise any haphazardly thrown together contributions will be rejected.
 
->The original maintainers do not share this policy, so you may find AI contributions in /ghostty-shaders-original.
+>The original maintainers do not share this policy, so you may find AI contributions in /ghostty-shaders.
 
 For now, enjoy what's displayed here!!!
 And thank you for checking out the repo!
 While it's still a work in progress, I hope you enjoy and look forward to watching the project grow.
 
-Below are **Installation** instructions.(will always work on the main branch, even as the project gets more complex.)
+Below are **Installation** instructions.(will change when custom build configuration pipeline is built. However if it is displayed on the main readme it will work.)
 
 ---
 . Tree view
@@ -49,7 +52,7 @@ Below are **Installation** instructions.(will always work on the main branch, ev
             │   ├── shader1.glsl
             │   └── shader2.glsl
             │
-            ├── ghostty-originals/
+            ├── ghostty-shaders/
             │   ├── shader1.glsl
             │   └── shader2.glsl
             │
@@ -82,7 +85,7 @@ cp ~/GSIM/shaders/Lizard-Originals/*.glsl \
 Or a single shader:
 
 ```bash
-cp ~/GSIM/shaders/Lizard-Originals/crt.glsl \
+cp ~/GSIM/shaders/Lizard-Originals/Master-TV.glsl \
    ~/.config/ghostty/GSIM/shaders/Active/
 ```
 ---
@@ -90,7 +93,7 @@ cp ~/GSIM/shaders/Lizard-Originals/crt.glsl \
 Where ever you put it, point Ghostty at it:
 
 ```ini
-custom-shader = ~/.config/ghostty/GSIM/shaders/Active/crt.glsl
+custom-shader = ~/.config/ghostty/GSIM/shaders/Active/Master-TV.glsl
 ```
 
 ## **Config Tooling Coming Soon**
@@ -109,11 +112,11 @@ If you see `unknown field` errors in your logs, you likely pasted GLSL code dire
 
 ### Performance & Latency:
 To maintain a steady 60/120 FPS on high-refresh displays:
-* Use `custom-shader-animation = true` to pause rendering when the window is hidden.
-* Keep the math inside `mainImage` as lean as possible—avoid complex loops
+* Use `custom-shader-animation = true` to pause rendering when the window is hidden,(setting it to always does just that) or make use of more advanced mathmatics such as `Smoothstepping` and branchless pipelines.  
+* Keep the math inside `mainImage` as lean as possible, avoid complex loops, and redundant logic.
 
 ## Progress 
-anything inside ghostty-shaders is not currently optimized, I will continue to pull new updates in from the maintainers but I will not make any direct progress with the project. 
+anything inside ghostty-shaders is not currently optimized by me, I will continue to pull new updates in from the maintainers but I will not make any direct progress with the project. 
 repo is a work in progress, I've been tooling with in my spare time will tag a pre-release with tags soon. 
 when I feel I've made significant progress or I've come to a final direction for project. 
 
