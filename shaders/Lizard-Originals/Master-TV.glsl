@@ -1,5 +1,4 @@
 // Ghostty 1.3.x+ Master-TV
-// By GrandBIRDLizard 2026
 // Optimized for high res and hrz systems
 
 // BSD 3-Clause License (Modified - Name Attribution Required)
